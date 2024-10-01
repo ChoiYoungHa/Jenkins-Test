@@ -12,6 +12,6 @@ public class ProcessController {
 	@GetMapping("/test")
 	public String reqRes() {
 		log.info("요청 수락 ~~~");
-		return "linux 서버에서 실행되는 app 입니다. cicd 성공하는지 테스트 해봅시다.";
+		return "<h1>linux 서버에서 실행되는 app 입니다</h1>";
 	}
 }
