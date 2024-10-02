@@ -11,7 +11,7 @@ public class ProcessController {
 	
 	@GetMapping("/test")
 	public String reqRes() {
-		log.info("요청 수락 ~~~");
-		return "<h1>linux 서버에서 실행되는 app 입니다 cicd 테스트!</h1>";
+		log.info("요청이 들어왔습니다.");
+		return "<h1>Kubernetes Load LoadBalancer Test</h1>";
 	}
 }
