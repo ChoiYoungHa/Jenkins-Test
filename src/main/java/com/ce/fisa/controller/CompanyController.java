@@ -15,6 +15,9 @@ import com.ce.fisa.model.domain.dto.DeptDTO;
 import com.ce.fisa.model.domain.dto.EmpDTO;
 import com.ce.fisa.service.CompanyService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController //모든 메소드의 결과가 문자열로 반환, 비동기에 적합
 public class CompanyController {
 
@@ -24,6 +27,7 @@ public class CompanyController {
 	//모든 부서 정보 검색
 	@GetMapping("alldepts")
 	public List<DeptDTO> getDeptAll(){
+		log.info("test");
 		return service.getDeptAll();
 	}
 	
